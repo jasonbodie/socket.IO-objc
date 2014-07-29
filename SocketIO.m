@@ -442,7 +442,7 @@ NSString* const SocketIOException = @"SocketIOException";
 # pragma mark Regex helper method
 - (NSMutableArray*) getMatchesFrom:(NSString*)data with:(NSString*)regex
 {
-    NSRegularExpression *nsregexTest = [NSRegularExpression regularExpressionWithPattern:NSRegularExpressionDotMatchesLineSeparators options:0 error:nil];
+    NSRegularExpression *nsregexTest = [NSRegularExpression regularExpressionWithPattern:regex options:NSRegularExpressionDotMatchesLineSeparators error:nil];
     NSArray *nsmatchesTest = [nsregexTest matchesInString:data options:0 range:NSMakeRange(0, [data length])];
     NSMutableArray *arr = [NSMutableArray array];
     
