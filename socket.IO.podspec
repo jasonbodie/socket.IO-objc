@@ -1,6 +1,6 @@
 Pod::Spec.new do |spec|
   spec.name         = 'socket.IO'
-  spec.version      = '0.5.5'
+  spec.version      = '0.5.6'
   spec.license      = 'MIT'
   spec.summary      = 'socket.io v0.7.2+ for iOS devices.'
   spec.homepage     = 'https://github.com/pkyeck/socket.IO-objc'
